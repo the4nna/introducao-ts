@@ -12,10 +12,14 @@ function somarNumeros(num1, num2, printarResultado, frase) {
 var printarResultado = true;
 var frase;
 frase = "O resultado é: ";
-if (button) {
-    button.addEventListener('click', function () {
-        if (input1 && input2) {
-            console.log(somarNumeros(Number(input1.value), Number(input2.value), printarResultado, frase));
-        }
-    });
-}
+button === null || button === void 0 ? void 0 : button.addEventListener('click', function () {
+    console.log(somarNumeros(Number(input1.value), Number(input2.value), printarResultado, frase));
+});
+// if (button) {
+//     button.addEventListener('click', () => {
+//         if (input1 && input2) {
+//             console.log(somarNumeros(Number(input1.value), Number(input2.value), printarResultado, frase))
+//         }
+//     })
+// }
+// button?.addEventListener OU ^
